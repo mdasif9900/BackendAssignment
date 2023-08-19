@@ -1,7 +1,12 @@
 const express = require("express");
 const app = express();
 
+
 const userRoutes = require("./routes/User");
+const productRoutes = require("./routes/Product");
+const cartRoutes = require("./routes/Cart");
+const OrderRoutes = require("./routes/Order");
+
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
 
@@ -20,8 +25,10 @@ app.use(cookieParser());
 
 //routes
 app.use("/api/v1/auth", userRoutes);
+app.use("/api/v1/product", productRoutes);
+app.use("/api/v1/cart", cartRoutes);
+app.use("/api/v1/order", OrderRoutes);
 
-console.log("Starting")
 
 //default route
 app.get("/", (req, res) => {

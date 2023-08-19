@@ -10,7 +10,6 @@ const {
 } = require("../controllers/Auth")
 
 
-
 // Routes for Login, Signup
 
 // Route for user login
