@@ -19,3 +19,6 @@
     $ npm run dev
 
 ```
+
+## API DOCUMENTATION
+-https://documenter.getpostman.com/view/20696560/2s9Y5SWRGK
